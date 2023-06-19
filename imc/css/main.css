@@ -1,0 +1,103 @@
+/*fonte*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+/*Definit as variáveis de ambiente css*/
+
+:root{
+    --bg-cor-fundo: rgb(35, 129, 56);
+    --bg-cor-main: rgb(54, 236, 154);
+    --bg-cor-main-dark: rgb(3, 16, 6);
+    --cor-texto: rgb(255 255 255);
+}
+/* Resetar as definições dos navegadores*/
+
+* {
+    outline: 0;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-cor-fundo);
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif ;
+    font-size: 1.3em;
+    line-height: 1.2em
+}
+
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-cor-main);
+    margin: 0 auto;
+    max-width: 70%;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    background: var(--bg-cor-main);
+    color: var(--cor-texto);
+    height: 70px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background: var(--bg-cor-main);
+    height: 60px;
+    color: var(--cor-texto);
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+aside{
+    width: 75%;
+    margin: 0 auto;
+}
+
+aside img{
+    width: 50%;
+    margin-left: 200px;
+}
+
+form label, form input{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    width:  300px;
+    border-radius: 20px;
+    border: none;
+}
+
+form button{
+    margin-left: 80px;
+    width: 25%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+form input{
+    height: 30px;
+    padding: 20px;
+    font-size: 23px;
+
+}
+
+form input:focus{
+    outline: 1px solid var(--bg-cor-main-dark);
+}
